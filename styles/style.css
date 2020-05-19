@@ -1,0 +1,80 @@
+/* sets document to use border-box for sizing */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Libre Baskerville", serif;
+  margin: 0px;
+  padding: 0px;
+}
+/* colors items for placemant */
+
+article {
+  background-color: blue;
+}
+.article-links {
+  background-color: aqua;
+}
+.related-articles {
+  background-color: yellow;
+}
+.most-popular {
+  background-color: beige;
+}
+.blog-links {
+  background-color: chocolate;
+}
+footer {
+  background-color: cyan;
+}
+
+/* styles nav bar */
+
+nav {
+  position: fixed;
+  display: grid;
+  background-color: white;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 0.5px solid rgb(138, 138, 138);
+  border-bottom: 0.5px solid rgb(138, 138, 138);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+nav i {
+  vertical-align: text-bottom;
+  margin-left: 1em;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+nav div:nth-child(1) a {
+  margin-left: 1em;
+  margin-right: 1em;
+  font-weight: bold;
+}
+
+nav div:nth-child(2) {
+  justify-content: center;
+  font-weight: bold;
+}
+
+nav div:nth-child(3) {
+  justify-content: flex-end;
+}
+nav div:nth-child(3) a {
+  font-size: 0.7em;
+  font-weight: bold;
+  margin-right: 1em;
+  background-color: rgb(86, 123, 149);
+  color: white;
+  padding: 1em;
+  border-radius: 8%;
+}
